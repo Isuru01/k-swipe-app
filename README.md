@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+# 🏙️ K-SWIPE : NEO-OASIS
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**A Premium Linguistic Gauntlet for Modern Seoul Residency.**
 
-## Get started
+K-Swipe is not just a language app; it is a high-fidelity immersion engine designed to bridge the gap between casual study and high-stakes linguistic mastery. Seated in the neon-noir "Neo-Oasis" aesthetic, the platform leverages dynamic game theory and phonetic engineering to accelerate Hangeul proficiency.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 💎 CORE DNA: THE PROTOCOLS
 
-2. Start the app
+### 1. The Entrance Diagnostic (Onboarding)
+Entering District 01 requires a high-fidelity initialization protocol. New agents undergo a 3-stage diagnostic:
+*   **Identity Protocol**: Establishment of an Agent Alias.
+*   **Aptitude Gauntlet**: A 3-phase recognition and vocabulary trial to determine starting proficiency: **Beginner (초보자)**, **Intermediate (중급자)**, or **Expert (전문가)**.
+*   **Ambition Mapping**: Strategic selection of learning sectors (e.g., K-Pop, K-Drama, Dating, Work, Travel) to personalize the vocabulary delivery engine.
 
-   ```bash
-   npx expo start
-   ```
+### 2. The Linguistic Engine
+Proprietary tech designed for authentic Hangeul interaction:
+*   **Jamo-Aware Keyboard**: A dynamic IME engine that ensures correct syllable formation.
+*   **Adaptive Keys**: The keyboard intelligently adapts for every word, ensuring all necessary Jamo and double-consonants are available while providing distractor keys to test mastery.
+*   **Phonetic Hangeul Avatar**: A unique identity generator that transliterates English names into phonetic Hangeul syllables (e.g., "Isuru" → **이수루**) seated in a premium glassmorphic border.
 
-In the output, you'll find options to open the app in a
+### 3. The Mastery Gauntlet (Game Modes)
+*   **Vibe Check (Mixed Practice)**: The standard training session featuring a stochastic boss-trigger system. Users face 10 words, with 2–3 randomized "Boss Level" typing tasks to reinforce mastery.
+*   **Boss Arena (Gauntlet Mode)**: Unlocked after 50 swipes, this hardcore mode forces a continuous 10-word typing gauntlet. One mistake ends the streak.
+*   **Swipe Deck**: The foundational learning loop. Swipe left/right to learn vocabulary pool before entering the arena.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 4. Neural Dashboard
+Your mission control in the Neo-Oasis:
+*   **Word of the Day (WOTD)**: An algorithmically seeded daily mission based on the district calendar.
+*   **Linguistic XP & Streaks**: Real-time tracking of mastery points, daily streaks (Flame Protocol), and total vocabulary count.
+*   **Identity Display**: Direct visualization of your proficiency rank and selected interests.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ TECH ARCHITECTURE
 
-When you're ready, run:
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | Expo SDK 54 / React Native 0.81.5 |
+| **Styling** | NativeWind (Tailwind CSS) / Moti (Animations) |
+| **Database** | SQLite (Local) / Drizzle ORM |
+| **Identity/Sync** | Supabase Auth & Storage |
+| **Typography** | Tenada (Premium Hangeul Custom Font) |
+| **Logic** | hangul-js (Syllable Assembly) |
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛡️ COMPLIANCE & PRIVACY
+K-Swipe is engineered with **Global Compliance Protocol 5.1.1(v)**:
+*   **In-App Termination**: Agents can permanently delete their account and wipe all linguistic records (SQLite Purge) directly from the Profile sector.
+*   **Data Sovereignty**: Linguistic data is stored locally to minimize exposure, with secure Auth handled by Supabase.
+*   **Transparency Protocols**: Full access to Privacy Policies and Terms of Residency within the app interface.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🚀 INITIALIZATION
+To sync with District 01:
+1. `npm install`
+2. `npx expo start`
+3. Enter the Neo-Oasis.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+*© 2026 NEO-OASIS TECHNOLOGIES. CLASSIFIED LINGUISTIC ASSET.*

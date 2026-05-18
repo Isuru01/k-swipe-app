@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Protocol | K-SWIPE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0D0D0D;
+            --text-main: #FFFFFF;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --accent-cyan: #00FFC2;
+            --accent-pink: #EF5777;
+            --card-bg: rgba(26, 26, 26, 0.8);
+            --border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient Glow Effects */
+        .glow-top {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,255,194,0.08) 0%, rgba(13,13,13,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .glow-bottom {
+            position: absolute;
+            bottom: -200px;
+            left: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(239,87,119,0.05) 0%, rgba(13,13,13,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .tag {
+            display: inline-block;
+            color: var(--accent-cyan);
+            font-size: 11px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 16px;
+            background: rgba(0, 255, 194, 0.1);
+            border: 1px solid rgba(0, 255, 194, 0.2);
+            padding: 6px 16px;
+            border-radius: 999px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 0 0 16px 0;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 32px;
+            padding: 48px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-top: 48px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent-pink);
+            box-shadow: 0 0 10px var(--accent-pink);
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p, ul {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        li::marker {
+            color: var(--accent-cyan);
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-cyan);
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--text-main);
+            border-bottom-color: var(--text-main);
+        }
+
+        .footer {
+            margin-top: 64px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: 16px;
+            margin-top: 40px;
+        }
+
+        .contact-box p {
+            margin: 0;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 32px 24px;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow-top"></div>
+    <div class="glow-bottom"></div>
+
+    <div class="container">
+        <header>
+            <div class="tag">System Protocol</div>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Effective Date: May 11, 2026</div>
+        </header>
+
+        <div class="content-card">
+            <p>Studio Vibex ("we," "our," or "us") is highly committed to protecting your privacy and digital sovereignty. This Privacy Protocol explains how your personal information is collected, used, and secured by K-Swipe (the "App").</p>
+            <p>By initializing a session within K-Swipe, you agree to the collection and use of information in accordance with this Protocol.</p>
+
+            <h2>1. Data Collection</h2>
+            <p>To provide you with a personalized and highly responsive language-learning experience, we collect the strictly necessary information:</p>
+            
+            <h3>A. Identity Coordinates</h3>
+            <ul>
+                <li><strong>Email Address:</strong> Used as your primary identifier for authentication, residency recovery, and security checks.</li>
+                <li><strong>User IDs:</strong> Unique internal identifiers assigned to your account for system management.</li>
+                <li><strong>Profile Aliases:</strong> Your chosen username and your current linguistic proficiency level.</li>
+            </ul>
+
+            <h3>B. Performance & App interactions</h3>
+            <ul>
+                <li><strong>App interactions:</strong> We track your responses to learning cards (swipes) and boss level completions to power our Spaced Repetition System (SRS).</li>
+                <li><strong>Local Sovereignty (Device Storage):</strong> Your immediate study performance, word mastery algorithms, and XP points are stored locally on your device for maximum speed and privacy.</li>
+                <li><strong>Cloud Synchronization:</strong> Your local learning statistics, XP, and profile data are securely mirrored to our encrypted cloud framework.</li>
+            </ul>
+
+            <h2>2. Purpose of Processing</h2>
+            <p>Your data powers the mechanics of the app. We use it for the following purposes:</p>
+            <ul>
+                <li><strong>System Maintenance:</strong> Enabling authentication, syncing vocabulary progress, and managing your daily streaks.</li>
+                <li><strong>Algorithmic Refinement:</strong> Understanding overall progression to refine the app's difficulty scaling.</li>
+                <li><strong>Critical Comms:</strong> Sending essential security updates (e.g., OTP recovery codes). <strong>We do not use your email for marketing campaigns.</strong></li>
+            </ul>
+
+            <h2>3. Security Protocols</h2>
+            <ul>
+                <li><strong>Infrastructure:</strong> We employ <strong>Supabase</strong> as our robust backend layer. All data transmitted between your device and the cloud is heavily encrypted in transit using industry-standard TLS/SSL encryption.</li>
+                <li><strong>Row-Level Security (RLS):</strong> Your data is shielded by strict RLS policies, ensuring that your learning metrics and profile can only be accessed or modified by your authenticated signature.</li>
+            </ul>
+
+            <h2>4. Third-Party Agents</h2>
+            <p>Your data is yours. <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We only interface with our trusted infrastructure provider strictly to host the application database and manage identity verification.</p>
+
+            <h2>5. Neural Dissolve & Data Rights</h2>
+            <p>You maintain absolute authority over your records in District 01.</p>
+            <ul>
+                <li><strong>Access:</strong> Your learning progress is entirely transparent and accessible directly within the App's UI.</li>
+                <li><strong>Total Purge (Account Deletion):</strong> You hold the power to permanently erase your existence from our grid at any time. This is done via the Profile settings ("Delete Account & Data" protocol).</li>
+                <li><strong>Manual Deletion Request:</strong> If you are unable to access the App, you may request the deletion of your account and all associated data by contacting us directly at <a href="mailto:contact.isuruakalanka@gmail.com">contact.isuruakalanka@gmail.com</a>. We will process your request within 7 business days.</li>
+            </ul>
+
+            <h2>6. Youth Protection</h2>
+            <p>K-Swipe does not knowingly collect personally identifiable information from individuals under 13 years of age. If we detect unauthorized residency of a minor, we will immediately purge those records from the system.</p>
+
+            <h2>7. Protocol Modifications</h2>
+            <p>We may upgrade this Privacy Protocol periodically. You are advised to review this page occasionally for any systematic changes.</p>
+
+            <div class="contact-box">
+                <p>Developer: Studio Vibex</p>
+                <p>Inquiries: <a href="mailto:contact.isuruakalanka@gmail.com">contact.isuruakalanka@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Studio Vibex. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
